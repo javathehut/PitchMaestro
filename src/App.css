@@ -1,0 +1,252 @@
+@media only screen and (max-width: 768px) { 
+    .small {
+        display: none;
+    }
+    .practice {
+        margin-bottom: 2em;
+    }
+
+}
+
+
+body {
+    margin:0;
+    padding: 0;
+    background-image: url('./images/music-back2.jpg');
+    min-height: 100%;
+    min-width: 100%;
+}
+
+#wavy {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  transform: translate(-40%, -40%);
+}
+
+nav img {
+    width: 6%;
+    display: inline;
+}
+
+.navbar{
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 1.25em;
+}
+
+.contact {
+    height: 30px;
+    width: 30px;
+}
+
+.construction{
+    background-color: rgba(237, 7, 31, 0.5);
+    border-radius: .25em;
+}
+
+.constructon h1 {
+    font-size: 5em;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: .85em;
+    text-align: left;
+    color: white;
+    padding-top: 1.5%;
+}
+
+.list {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.page-header, .titles, .construction {
+    font-family: 'Amatic SC', cursive;
+}
+
+.page-header {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: .25em;
+}
+
+.pitch {
+    background-color: rgba(252, 252, 123, 0.5);
+    border-radius: .25em;
+}
+
+.titles {
+    background-color: rgba(230, 190, 234, 0.9);
+    border-radius: .25em;
+    margin: 0 auto;
+    padding: 0 2% 0 2%;
+}
+
+.titles h1{
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.titlebtn {
+    background-color: rgba(0,0,0,0);
+}
+
+.page-header h1 {
+    font-weight: 700;
+    font-size: 5em;
+}
+
+.game, .signlog {
+    border: 1px solid white;
+    border-radius: .25em;
+    background-color: rgba(248, 248, 248, 0.9);
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.game h2 {
+    text-align: center;
+    margin: 4% auto;
+}
+
+.makebold{
+    font-size: 1.5em;
+}
+
+.testQuest {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.65em;
+    text-align: center;
+    padding-top: 0.5em;
+    margin: 0.25em 0 0.25em 0;
+}
+
+.practicebtn, .testbtn {
+    background-color: #a2f2a2;
+    border: 1px solid black;
+    margin: 15px;
+    vertical-align: middle;
+    margin-left: 40%;    
+}
+
+.submitbtn {
+    margin-top: 15%;
+    border: 1px solid black;
+    background-color: #fcfc7b;
+}
+
+.changeChordbtn, .changeKeybtn {
+    border-radius: .25em;
+    padding: 5px;
+    font-size: 1.25em; 
+    margin: 0 10px 15px 0;
+    width: fit-content;
+}
+
+.buttonDiv {
+    width: fit-content;
+}
+
+.testbtn {
+    font-size: 1.75em;
+    margin-top: 0.75em;
+}
+
+.noteDisplay {
+    border-radius: .25em;
+    background-color: white;
+    font-size: 1.75em;
+    margin: 3%;
+    vertical-align: middle;
+    text-align: center;
+    float: right;
+    margin-right: 20%;
+}
+
+.score {
+    border: solid 1px darkslategrey;
+    background-color: lightgreen;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.radio, .submitbtn {
+    font-size: 1.75em;
+}
+.radio {
+    margin-left: 40%;
+}
+
+.rightResult, .wrongResult {
+    border: 1px solid grey;
+    border-radius: .25em;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 2%;   
+}
+
+.rightResult {
+    background-color: #a2f2a2;
+}
+
+.wrongResult {
+    background-color: #f28787;
+}
+
+.spacer {
+    height: 5em;
+    display: block;
+}
+
+.signlog {
+    padding: 2%;
+}
+
+.signbtn {
+    border: 1px solid black;
+    background-color: #fcfc7b;
+    border-radius: .25em;
+    font-size: 1.5em;
+}
+
+.logbtn {
+    border: 1px solid black;
+    background-color: #a2f2a2;
+    border-radius: .25em;
+    font-size: 1.5em;
+}
+
+.table-head th{
+    font-size: 2em;
+    text-align: center;
+}
+
+.tablestyle {
+    border-radius: .25em;
+    background-color: rgba(248, 248, 248, 0.9);
+    height: 100%;
+    text-align: center;
+}
+
+.showcard {
+    font-size: 1.5em;
+    
+}
+
+.gotcha {
+    display: none;
+}
+
+.form-horizontal {
+    font-size: 1.5em;
+}
+
+.form-horizontal input, .form-horizontal textarea {
+    border-radius: .25em;
+}

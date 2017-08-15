@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="pmgame.css">
+    <title>Pitch Maestro Layout</title>
+</head>
+
+<body id="wavy">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+
+                <img src="./public/AngeliqueLogo.png">
+
+                <!-- Collect the nav links for toggling -->
+                <div class="list">
+                    <ul class="nav navbar-nav">
+                        <li><a href="pmgame.html">PitchMaestro</a></li>
+                        <li><a href="#">Sign Up/ Log In</a></li>
+                        <li><a href="#">See Your Stats</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <div class="page-header">
+            <h1 class="text-center">Pitch Maestro <br>
+                <small>An ear trainer for musicians and the musically inclined</small></h1>
+        </div>
+
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 practice">
+                <div class="col-md-12 titles text-center">
+                    <h1>PRACTICE</h1>
+                </div>
+                <div class="col-md-12 game">
+
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <button type="button" class="btn btn-default practicebtn" aria-label="Left Align">
+                            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                            <span class="hidden">C4</span>
+                        </button>
+                        </div>
+                        <div class="col-xs-2 noteDisplay center-block">
+                            C4
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <button type="button" class="btn btn-default practicebtn" aria-label="Left Align">
+                            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                            <span class="hidden">E4</span>
+                        </button>
+                        </div>
+                        <div class="col-xs-2 noteDisplay">
+                            E4
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <button type="button" class="btn btn-default practicebtn" aria-label="Left Align">
+                            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                            G4
+                        </button>
+                        </div>
+                        <div class="col-xs-2 noteDisplay">
+                            G4
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="col-md-12 titles text-center">
+                    <h1>TEST</h1>
+                </div>
+                <div class="col-md-12 game">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <button type="button" class="btn btn-default testbtn roboto" aria-label="Center Align">
+                                <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Play a note
+                            </button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <form>
+                            <div class="col-xs-6 roboto">
+                                <div class="radio">
+                                    <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                                    C4
+                                </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                    E4
+                                </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                    G4
+                                </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 roboto">
+                                <button type="submit" class="btn btn-default submitbtn">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="text-center titles">
+                    <h1>SCORE</h1>
+                </div>
+                <div class="col-xs-12 score roboto">
+                    <h2>
+                        Longest Streak:
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="waveform.js"></script>
+    <script>
+        var wave = new WaveForm({
+            container: document.getElementById("wavy"),
+            data: [1, 0.2, 0.5],
+
+            innerColor: "#CAB",
+            outerColor: "#363"
+
+        })
+        var Tone = require(Tone);
+        var synth = new Tone.Synth().toMaster()
+
+        //attach a listener to all of the buttons
+        document.querySelectorAll('.practicebtn').forEach(function (button) {
+            button.addEventListener('click', function (e) {
+                //play the note on click for 1 second
+                synth.triggerAttackRelease(e.target.textContent, 1)
+            })
+        })
+    </script>
+</body>
+
+</html>
