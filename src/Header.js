@@ -13,11 +13,11 @@ class Header extends Component {
                         <div className="list roboto">
                             <ul className="nav navbar-nav">
                                 <li><Link to="/"><span className="glyphicon glyphicon-music"></span>PitchMaestro</Link></li>
-                                <li><Link to="/about">About</Link></li>
                                 <li><Link to="/email">Contact Angelique</Link></li>
-                                {/*<li><Link to="/signuplogin">Sign Up/ Log In</Link></li>
+                                {/*<li><Link to="/about">About</Link></li>
+                                <li><Link to="/signuplogin">Sign Up/ Log In</Link></li>
                                 <li><Link to="/stats">See Your Stats</Link></li>
-                                --Hiding these two as they don't work just yet.*/}
+                                --Hiding these pages as they aren't finished/functioning yet.*/}
                             </ul>
                         </div>
                         
