@@ -32,9 +32,9 @@ class Score extends Component {
                         <div className="col-xs-12 col-md-6">
                             <h2 className="roboto text-center">Longest Streak: {longestStreak}</h2>
                         </div>
-                        <div className="col-xs-12 col-md-4 hidden">
+                        {/*<div className="col-xs-12 col-md-4 hidden">
                             <h2 className="roboto text-center">Total Right Answers: {rightAnswers}</h2>
-                        </div>
+                        </div>*/}
                     </div>
                 </div>
                 <div className="col-md-12 spacer"></div>

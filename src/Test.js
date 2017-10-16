@@ -106,7 +106,7 @@ class Test extends Component {
                 </div>
             )
         });
-
+    let streak = this.state.streak + 1;
         return (
             <div>
                 <div className="col-xs-12 col-sm-6">
@@ -129,13 +129,13 @@ class Test extends Component {
                                     aria-label="Center Align"
                                     onClick={this.playRandomNote}
                                     disabled={this.state.playDisabled ? true : false}>
-                                    <span className="glyphicon glyphicon-play" aria-hidden="true"></span> Play a note
+                                    <span className="glyphicon glyphicon-play" aria-hidden="true"></span> Play note {streak}
                             </button>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-xs-12 testQuest">
-                                <p>What note do you hear?</p>
+                                <p>{streak}. What note do you hear?</p>
                             </div>
                         </div>
                         <div className="row">

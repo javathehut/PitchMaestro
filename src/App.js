@@ -73,6 +73,7 @@ class App extends Component {
         <div className="page-header">
           <h1 className="text-center">Pitch Maestro <br />
             <small className="small">An ear trainer for musicians and the musically inclined</small></h1>
+            <h3 className="text-center roboto">Click anywhere you see "<span className="glyphicon glyphicon-chevron-down"></span>" for instructions!</h3>
         </div>
         <div className="row">
           <Maestro keyIndex={this.state.keyIndex} chordIndex={this.state.chordIndex} changeChord={this.changeChord} changeKey={this.changeKey} testing={this.state.testing} toggle={this.toggle} collapse={this.state.collapse}/>
