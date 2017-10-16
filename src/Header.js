@@ -15,8 +15,9 @@ class Header extends Component {
                                 <li><Link to="/"><span className="glyphicon glyphicon-music"></span>PitchMaestro</Link></li>
                                 <li><Link to="/about">About</Link></li>
                                 <li><Link to="/email">Contact Angelique</Link></li>
-                                <li><Link to="/signuplogin">Sign Up/ Log In</Link></li>
+                                {/*<li><Link to="/signuplogin">Sign Up/ Log In</Link></li>
                                 <li><Link to="/stats">See Your Stats</Link></li>
+                                --Hiding these two as they don't work just yet.*/}
                             </ul>
                         </div>
                         
