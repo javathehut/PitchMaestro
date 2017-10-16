@@ -12,6 +12,9 @@ const knex = require('knex')({
     }
 });
 const bookshelf = require('bookshelf')(knex);
+// const bCrypt = require('bcrypt-nodejs');
+// const boom = require();
+
 
 const User = bookshelf.Model.extend({
     tableName: 'users'
@@ -30,6 +33,7 @@ app.post('/newuser', (req, res)=>{
     console.log(req.body);
     const newUser = new User(req.body);
 
+    
     newUser
         .save()
         .then(newuser => {

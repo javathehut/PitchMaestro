@@ -40,7 +40,7 @@ class Test extends Component {
             correcthidden: true, //hide results
             incorrecthidden: true,
         });
-        this.props.testingTrue(); //TO BE USED TO DISABLE PRACTICE BUTTONS SOMEHOW
+        this.props.testingTrue(); //TO BE USED TO DISABLE PRACTICE BUTTONS
     }
 
     checkAnswer(e) {

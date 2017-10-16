@@ -14,26 +14,27 @@ class SignupLogin extends Component {
     handleSignup(e) {
         e.preventDefault();
 
-        // const newUser = {
-        //     name: this.name.value,
-        //     username: this.username.value
-        // }
-        // axios.post('http://localhost:8080/newuser', newUser)
-        //     .then(res => {
-        this.toMainPage();
-        // });
+        const newUser = {
+            name: this.name.value,
+            username: this.username.value
+        }
+        axios.post('http://localhost:8080/newuser', newUser)
+            .then(res => {
+                console.log(res)
+        });
     }
 
     handleLogin(e) {
         e.preventDefault();
 
-        // const login = {
-        //     login: this.login.value
-        // }
-        // axios.post('http://localhost:8080/login', login)
-        //     .then(res => {
-        this.toMainPage();
-        // });
+        const login = {
+            login: this.login.value
+        }
+        axios.post('http://localhost:8080/login', login)
+            .then(res => {
+                console.log(res)
+        // this.toMainPage();
+        });
 
     }
 
