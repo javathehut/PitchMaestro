@@ -117,7 +117,7 @@ class Test extends Component {
                         <Collapse isOpen={this.props.collapse.test}>
                             <Card>
                                 <CardBlock className="roboto showcard">
-                                    <p>Once you're done practicing, click "Play a note". Choose the note you think you heard and click "Submit" to reveal your results.</p>
+                                    <p>Once you're done practicing, click "Play note 1". Choose the note you think you heard and click "Submit" to reveal your results.</p>
                                 </CardBlock>
                             </Card>
                         </Collapse>
